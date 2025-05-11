@@ -7,25 +7,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
     }
+
+    main {
+      flex: 1;
+    }
+
     .navbar {
       background-color: #1a1a2e;
     }
+
     .navbar-brand, .nav-link, .footer {
       color: #fff !important;
     }
+
     .footer {
       background-color: #1a1a2e;
       color: #ccc;
       padding: 20px 0;
       text-align: center;
     }
+
     .card:hover {
       transform: scale(1.03);
       transition: transform 0.3s ease;
     }
+
     .icon {
       font-size: 40px;
       color: #007bff;
@@ -49,93 +65,98 @@
     </div>
   </nav>
 
-  <!-- Título -->
-  <section class="container text-center py-5">
-    <h1 class="animate__animated animate__fadeInDown">Nuestros Servicios</h1>
-    <p class="lead animate__animated animate__fadeInUp">Buscamos la conexión entre el talento y las organizaciones a través de ciencia, empatía y cultura transformadora.</p>
-  </section>
+  <!-- Contenido principal -->
+  <main>
 
-  <!-- Servicios -->
-  <section class="container py-4">
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card p-4 text-center h-100">
-          <div class="icon">🧬</div>
-          <h5>Diagnóstico ADNe</h5>
-          <p>Evaluamos compatibilidad emocional, de valores y motivaciones para alinear personas y cultura.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-4 text-center h-100">
-          <div class="icon">🧠</div>
-          <h5>Diseño Cultural</h5>
-          <p>Co-creamos valores, rituales y narrativas identitarias para construir culturas auténticas y sostenibles.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-4 text-center h-100">
-          <div class="icon">🏗️</div>
-          <h5>Rediseño Organizativo</h5>
-          <p>Transformamos estructuras jerárquicas en redes adaptativas con roles basados en capacidades.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-4 text-center h-100">
-          <div class="icon">🚀</div>
-          <h5>Impulso del Talento (SIT)</h5>
-          <p>Sistema de desarrollo continuo: feedback, coaching, mentoring y planes personalizados.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-4 text-center h-100">
-          <div class="icon">🔍</div>
-          <h5>Selección con propósito</h5>
-          <p>Procesos de selección basados en valores, no solo CV. Onboarding inmersivo desde el día uno.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-4 text-center h-100">
-          <div class="icon">💬</div>
-          <h5>Comunicación Interna</h5>
-          <p>Diseñamos redes de comunicación empática para cohesionar equipos y alinear el propósito.</p>
-        </div>
-      </div>
-      <div class="col-md-6 mx-auto">
-        <div class="card p-4 text-center h-100">
-          <div class="icon">💰</div>
-          <h5>Política de Compensación</h5>
-          <p>Diseñamos modelos de retribución total que integran salario emocional, bienestar y propósito.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Título -->
+    <section class="container text-center py-5">
+      <h1 class="animate__animated animate__fadeInDown">Nuestros Servicios</h1>
+      <p class="lead animate__animated animate__fadeInUp">Buscamos la conexión entre el talento y las organizaciones a través de ciencia, empatía y cultura transformadora.</p>
+    </section>
 
-  <!-- Sectores -->
-  <section class="container py-5">
-    <h3 class="text-center mb-4">Sectores en los que trabajamos</h3>
-    <div class="row text-center g-4">
-      <div class="col-6 col-md-2">
-        <div class="icon">💻</div>
-        <p>IT</p>
+    <!-- Servicios -->
+    <section class="container py-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 text-center h-100">
+            <div class="icon">🧬</div>
+            <h5>Diagnóstico ADNe</h5>
+            <p>Evaluamos compatibilidad emocional, de valores y motivaciones para alinear personas y cultura.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 text-center h-100">
+            <div class="icon">🧠</div>
+            <h5>Diseño Cultural</h5>
+            <p>Co-creamos valores, rituales y narrativas identitarias para construir culturas auténticas y sostenibles.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 text-center h-100">
+            <div class="icon">🏗️</div>
+            <h5>Rediseño Organizativo</h5>
+            <p>Transformamos estructuras jerárquicas en redes adaptativas con roles basados en capacidades.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 text-center h-100">
+            <div class="icon">🚀</div>
+            <h5>Impulso del Talento (SIT)</h5>
+            <p>Sistema de desarrollo continuo: feedback, coaching, mentoring y planes personalizados.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 text-center h-100">
+            <div class="icon">🔍</div>
+            <h5>Selección con propósito</h5>
+            <p>Procesos de selección basados en valores, no solo CV. Onboarding inmersivo desde el día uno.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 text-center h-100">
+            <div class="icon">💬</div>
+            <h5>Comunicación Interna</h5>
+            <p>Diseñamos redes de comunicación empática para cohesionar equipos y alinear el propósito.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mx-auto">
+          <div class="card p-4 text-center h-100">
+            <div class="icon">💰</div>
+            <h5>Política de Compensación</h5>
+            <p>Diseñamos modelos de retribución total que integran salario emocional, bienestar y propósito.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-2">
-        <div class="icon">🛒</div>
-        <p>E-commerce</p>
+    </section>
+
+    <!-- Sectores -->
+    <section class="container py-5">
+      <h3 class="text-center mb-4">Sectores en los que trabajamos</h3>
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-2">
+          <div class="icon">💻</div>
+          <p>IT</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="icon">🛒</div>
+          <p>E-commerce</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="icon">📈</div>
+          <p>Marketing Digital</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="icon">🎨</div>
+          <p>UX/UI</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="icon">🛡️</div>
+          <p>Ciberseguridad</p>
+        </div>
       </div>
-      <div class="col-6 col-md-2">
-        <div class="icon">📈</div>
-        <p>Marketing Digital</p>
-      </div>
-      <div class="col-6 col-md-2">
-        <div class="icon">🎨</div>
-        <p>UX/UI</p>
-      </div>
-      <div class="col-6 col-md-2">
-        <div class="icon">🛡️</div>
-        <p>Ciberseguridad</p>
-      </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

@@ -1,4 +1,3 @@
-<!-- Estructura base del sitio ALTER-HUMANS -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,15 +7,29 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
     }
+
+    main {
+      flex: 1;
+    }
+
     .navbar {
       background-color: #1a1a2e;
     }
+
     .navbar-brand, .nav-link, .footer {
       color: #fff !important;
     }
+
     .jumbotron {
       background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?fit=crop&w=1600&q=80') center/cover no-repeat;
       color: white;
@@ -24,6 +37,7 @@
       text-align: center;
       position: relative;
     }
+
     .jumbotron::before {
       content: "";
       position: absolute;
@@ -34,16 +48,19 @@
       background: rgba(26, 26, 46, 0.7);
       z-index: 0;
     }
+
     .jumbotron > * {
       position: relative;
       z-index: 1;
     }
+
     .footer {
       background-color: #1a1a2e;
       color: #ccc;
       padding: 20px 0;
       text-align: center;
     }
+
     .card:hover {
       transform: scale(1.03);
       transition: transform 0.3s ease;
@@ -52,7 +69,7 @@
 </head>
 <body>
 
-  <!-- Header/Navbar -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">ALTER-HUMANS</a>
@@ -66,62 +83,64 @@
     </div>
   </nav>
 
-  <!-- Jumbotron -->
-  <div class="jumbotron">
-    <h1 class="display-4 animate__animated animate__fadeInDown">Reescribimos el código humano de las organizaciones</h1>
-    <p class="lead animate__animated animate__fadeInUp">Consultoría en RRHH especializada en talento digital y transformación cultural</p>
-    <a class="btn btn-primary btn-lg" href="servicios.html" role="button">Ver Servicios</a>
-  </div>
-
- <!-- Quiénes somos -->
-<section class="container py-5">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Quiénes somos</h2>
-        <p>ALTER-HUMANS nace en Valencia como una consultora de nueva generación, creada por estudiantes de Recursos Humanos comprometidos con cambiar la manera en que las organizaciones gestionan el talento. Nuestra misión es impulsar la transformación humana y cultural de las empresas a través de tecnología ética, neurociencia y diseño organizativo.</p>
-        <p>Buscamos alinear el propósito de las empresas con el ADN de las personas, utilizando un enfoque innovador que combina ciencia de datos, inteligencia emocional y cultura de alto rendimiento.</p>
-      </div>
-      <div class="col-md-6">
-        <a href="https://www.linkedin.com" target="_blank">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?fit=crop&w=800&q=80" 
-               alt="Tecnología y humanidad" 
-               class="img-fluid rounded shadow animate__animated animate__fadeInRight" />
-        </a>
-      </div>
+  <!-- Contenido principal -->
+  <main>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="display-4 animate__animated animate__fadeInDown">Reescribimos el código humano de las organizaciones</h1>
+      <p class="lead animate__animated animate__fadeInUp">Consultoría en RRHH especializada en talento digital y transformación cultural</p>
+      <a class="btn btn-primary btn-lg" href="servicios.html" role="button">Ver Servicios</a>
     </div>
-  </section>
-  
 
-  <!-- Carrusel de valores -->
-  <section class="container py-5">
-    <h2 class="text-center mb-4">Nuestros valores</h2>
-    <div class="row text-center">
-      <div class="col-md-3">
-        <div class="card p-3">
-          <h5>Humanidad radical</h5>
-          <p>Ponemos a las personas antes que los procesos.</p>
+    <!-- Quiénes somos -->
+    <section class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Quiénes somos</h2>
+          <p>ALTER-HUMANS nace en Valencia como una consultora de nueva generación, creada por estudiantes de Recursos Humanos comprometidos con cambiar la manera en que las organizaciones gestionan el talento. Nuestra misión es impulsar la transformación humana y cultural de las empresas a través de tecnología ética, neurociencia y diseño organizativo.</p>
+          <p>Buscamos alinear el propósito de las empresas con el ADN de las personas, utilizando un enfoque innovador que combina ciencia de datos, inteligencia emocional y cultura de alto rendimiento.</p>
+        </div>
+        <div class="col-md-6">
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?fit=crop&w=800&q=80" 
+                alt="Tecnología y humanidad" 
+                class="img-fluid rounded shadow animate__animated animate__fadeInRight" />
+          </a>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card p-3">
-          <h5>Transparencia valiente</h5>
-          <p>Decimos lo que hace falta, no lo que conviene.</p>
+    </section>
+
+    <!-- Valores -->
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Nuestros valores</h2>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="card p-3">
+            <h5>Humanidad radical</h5>
+            <p>Ponemos a las personas antes que los procesos.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <h5>Transparencia valiente</h5>
+            <p>Decimos lo que hace falta, no lo que conviene.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <h5>Innovación real</h5>
+            <p>No seguimos tendencias, las creamos.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <h5>Evidencia y emoción</h5>
+            <p>Actuamos con datos, decidimos con empatía.</p>
+          </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card p-3">
-          <h5>Innovación real</h5>
-          <p>No seguimos tendencias, las creamos.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card p-3">
-          <h5>Evidencia y emoción</h5>
-          <p>Actuamos con datos, decidimos con empatía.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
